@@ -9,6 +9,11 @@ import BuscadorCoches from './components/BuscadorCoches';
 import BuscadorDptoEmpleados from './components/BuscadorDptoEmpleados';
 import BuscadorEmpleadosOficio from './components/BuscadorEmpleadosOficio';
 import Departamentos from './components/MaestroDetalle/Departamentos';
+import TablaMultiplicar from './components/TablaMultiplicar';
+
+//!TENER CUIDADO PORQUE SIEMPRE COGE EL REACT-ROUTER.DOM
+import Router from './components/Router';
+import MenuRutas from './components/MenuRutas';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,7 +22,16 @@ root.render(
   // <BuscadorCoches/>
   // <BuscadorDptoEmpleados/>
   // <BuscadorEmpleadosOficio/>
-  <Departamentos/>
+  // <Departamentos/>
+  // <div>
+  //   <TablaMultiplicar numero="7"/>
+  //   <TablaMultiplicar numero="9"/>
+  // </div>
+  <div>
+    <MenuRutas/>
+    <Router/>
+  </div>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -30,7 +30,7 @@ export default class Departamentos extends Component {
     let idDpto = this.selectDepartamentos.current.value;
     console.log(idDpto);
     this.setState({
-      idDpto: idDpto
+      idDpto: idDpto //actualizo el valor del id del departamento para pasarselo al hijo al hacer click en el btn
     })
 
   }
