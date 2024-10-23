@@ -35,7 +35,6 @@ export default class TrabajadoresV2 extends Component {
         })
         console.log(this.state.trabajadores);
       })
-      
     }
   }
 
@@ -77,6 +76,7 @@ export default class TrabajadoresV2 extends Component {
       console.log(incremento);
     }
   }
+
   render() {
     return (
       <div>
