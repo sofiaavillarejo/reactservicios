@@ -21,6 +21,13 @@ export default class TablaMultiplicar extends Component {
   componentDidMount = () => {
     this.generarTabla();
   }
+
+  componentDidUpdate = (oldProps) => {
+    //si ha cambiado el numero, vuelve a dibujar la tabla
+    if(oldProps.numero != this.props.numero){
+      this.generarTabla();
+    }
+  }
   render() {
     return (
       <div>

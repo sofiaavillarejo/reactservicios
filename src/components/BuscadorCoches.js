@@ -58,7 +58,7 @@ export default class BuscadorCoches extends Component {
         <button onClick={this.buscarPorCoche}>Buscar coche</button>
         <ul>
           {this.state.cochesFiltro.length > 0 && (
-            <table border="1" style={{borderCollapse: "collapse"}}>
+            <table border="1" className='table table-primary'>
               <thead>
                 <tr>
                   <th>Coche</th>
@@ -71,7 +71,7 @@ export default class BuscadorCoches extends Component {
                 {
                   this.state.cochesFiltro.map((coche, index) => {
                     return(
-                      <tr>
+                      <tr key={index}>
                         <td>{coche.modelo}</td>
                         <td>{coche.marca}</td>
                         <td>{coche.conductor}</td>

@@ -4,5 +4,6 @@ var Global = {
   urlCoches: "https://apicochespaco.azurewebsites.net/webresources/coches",
   urlApiDptosEmpleados: "https://apidepartamentospgs.azurewebsites.net/",
   urlApiEmpleados: "https://apiempleadosspgs.azurewebsites.net/",
+  urlEjemplos: "https://apiejemplos.azurewebsites.net/"
 }
 export default Global;
